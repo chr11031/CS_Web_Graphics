@@ -112,8 +112,10 @@ function drag(e)
 	}
 }
 
-document.getElementById("mainCanvas").addEventListener("click", touch);
+//document.getElementById("mainCanvas").addEventListener("click", touch);
+document.getElementById("mainCanvas").addEventListener("mousedown", touch);
 document.getElementById("mainCanvas").addEventListener("mousemove", drag);
+document.getElementById("mainCanvas").addEventListener("mouseup", deactivateDrag);
 document.getElementById("mainCanvas").addEventListener("mouseleave", deactivateDrag);
 
 
